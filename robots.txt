@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+
+Sitemap: https://dengwenbo6.github.io/markdown/sitemap.xml
+Sitemap: https://dengwenbo6.github.io/markdown/baidusitemap.xml
