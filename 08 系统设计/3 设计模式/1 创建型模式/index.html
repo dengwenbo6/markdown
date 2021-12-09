@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5490,14 +5490,14 @@ var _hmt = _hmt || [];
 <p>在创建一个对象时不向客户暴露内部细节，并提供一个创建对象的通用接口。</p>
 <p>简单工厂把实例化的操作单独放到一个类中，这个类就成为简单工厂类，让简单工厂类来决定应该用哪个具体子类来实例化。</p>
 <p>这样做能把客户类和具体子类的实现解耦，客户类不再需要知道有哪些子类以及应当实例化哪个子类。客户类往往有多个，如果不使用简单工厂，那么所有的客户类都要知道所有子类的细节。而且一旦子类发生改变，例如增加子类，那么所有的客户类都要进行修改。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547524397460.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547524397460.png" alt=""></p>
 <h5 id="模式应用"><a class="header-anchor" href="#模式应用"></a>模式应用</h5>
 <p>java.text.DateFormat</p>
 <pre><code>public final static DateFormat getDateInstance(int style);
 </code></pre>
 <h3 id="2-工厂方法（Factory-Method）"><a class="header-anchor" href="#2-工厂方法（Factory-Method）"></a>2 工厂方法（Factory Method）</h3>
 <p>不传参数，而是分别建立工厂，使用工厂方法</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547524397770.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547524397770.png" alt=""></p>
 <h5 id="模式应用-v2"><a class="header-anchor" href="#模式应用-v2"></a>模式应用</h5>
 <p>JDBC 中的工厂方法</p>
 <pre><code>Connection conn = DriverManager.getConnection(&quot;jdbc:……&quot;);
@@ -5505,7 +5505,7 @@ Statement statement = conn.createStatement();
 </code></pre>
 <h3 id="3-抽象工厂（Abstract-Factory）"><a class="header-anchor" href="#3-抽象工厂（Abstract-Factory）"></a>3 抽象工厂（Abstract Factory）</h3>
 <p>系统的产品有多于一个的产品族，而系统只消费其中某一族的产品。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547524398094.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547524398094.png" alt=""></p>
 <h5 id="模式应用-v3"><a class="header-anchor" href="#模式应用-v3"></a>模式应用</h5>
 <p>在很多软件系统中需要更换界面主题，要求界面中的按钮、文本框、背景色等一起发生改变。</p>
 <h4 id="3-1-增加工厂"><a class="header-anchor" href="#3-1-增加工厂"></a>3.1 增加工厂</h4>
@@ -5513,18 +5513,18 @@ Statement statement = conn.createStatement();
 <li>新增一个工厂子类</li>
 <li>并增加相应产品子类</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547524398197.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547524398197.png" alt=""></p>
 <h4 id="3-2-增加产品"><a class="header-anchor" href="#3-2-增加产品"></a>3.2 增加产品</h4>
 <ol>
 <li>新增一个产品父类</li>
 <li>再增加对应每个工厂的产品子类</li>
 <li>最后在工厂父类、子类中新增产品方法</li>
 </ol>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547524398258.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547524398258.png" alt=""></p>
 <h2 id="2-Builder（建造者）"><a class="header-anchor" href="#2-Builder（建造者）"></a>2. Builder（建造者）</h2>
 <p>使用多个简单的对象一步一步构建成一个复杂的对象。</p>
 <p>工厂模式关注的是创建单个产品，而建造者模式则关注创建符合对象，多个部分</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547524398325.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547524398325.jpg" alt=""></p>
 <pre><code>MealBuilder mealBuilder = new MealBuilder();
 Meal vegMeal = mealBuilder.prepareVegMeal();
 Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
@@ -5571,7 +5571,7 @@ public class ShapeCache {
 <h2 id="4-Singleton（单例）"><a class="header-anchor" href="#4-Singleton（单例）"></a>4. Singleton（单例）</h2>
 <p>单例类只有一个实例，而且自行实例化并向整个系统提供这个实例</p>
 <p>构造函数私有</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1577261981171.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1577261981171.jpg" alt=""></p>
 <h5 id="模式应用-v6"><a class="header-anchor" href="#模式应用-v6"></a>模式应用</h5>
 <ul>
 <li>要求生产唯一序列号。</li>
@@ -5692,8 +5692,8 @@ public class ShapeCache {
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

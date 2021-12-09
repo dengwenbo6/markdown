@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5506,7 +5506,7 @@ var _hmt = _hmt || [];
 <h5 id="2）热点探测"><a class="header-anchor" href="#2）热点探测"></a>2）热点探测</h5>
 <p>基于采样的热点探测和基于计数器的热点探测，在 HotSpot 虚拟机中使用的是第二种，通过方法计数器和回边计数器进行热点探测。</p>
 <p>方法调用计数器触发的即时编译交互过程如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1578552980476.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1578552980476.jpg" alt=""></p>
 <h4 id="1-3-编译过程"><a class="header-anchor" href="#1-3-编译过程"></a>1.3 编译过程</h4>
 <h5 id="1）Client-Compiler"><a class="header-anchor" href="#1）Client-Compiler"></a>1）Client Compiler</h5>
 <p>对于 Client Compiler 来说，它是一个简单快速的三段式编译器，主要的关注点在于局部性的优化，而放弃了很多耗时较长的全局优化手段；</p>
@@ -5516,7 +5516,7 @@ var _hmt = _hmt || [];
 <li>最后阶段是在平台相关的后端使用线性扫描算法在 LIR 上分配寄存器，并在 LIR 上做窥孔优化，然后产生机器代码。</li>
 </ul>
 <p>其大致过程如下所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1578552983614.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1578552983614.jpg" alt=""></p>
 <h5 id="2）Server-Compiler"><a class="header-anchor" href="#2）Server-Compiler"></a>2）Server Compiler</h5>
 <p>Server Compiler 是专门面向服务端的典型应用并为服务端的性能配置特别调整过的编译器，也是一个充分优化过的高级编译器，几乎能达到 GNU C++ 编译器使用 -02 参数时的优化强大，它会执行所有经典的优化动作，如无用代码消除、循环展开、循环表达式外提、消除公共子表达式、常量传播、基本块重排序等，还会实现如范围检查消除、空值检查消除等 Java 语言特性密切相关的优化技术；</p>
 <h4 id="1-4-查看及分析即时编译结果"><a class="header-anchor" href="#1-4-查看及分析即时编译结果"></a>1.4 查看及分析即时编译结果</h4>
@@ -5528,8 +5528,8 @@ var _hmt = _hmt || [];
 </ul>
 <h3 id="2-编译优化技术"><a class="header-anchor" href="#2-编译优化技术"></a>2 编译优化技术</h3>
 <h4 id="2-1-优化技术概览"><a class="header-anchor" href="#2-1-优化技术概览"></a>2.1 优化技术概览</h4>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545642659285.jpg" alt="">
-<img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545642661932.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545642659285.jpg" alt="">
+<img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545642661932.jpg" alt=""></p>
 <h4 id="2-2-公共子表达式消除"><a class="header-anchor" href="#2-2-公共子表达式消除"></a>2.2 公共子表达式消除</h4>
 <p>如果一个表达式E已经计算过了，并且从先前的计算到现在E中所有变量的值都没有发生变化，那么 E 的这次出现就成为了公共子表达式，只需要直接用前面计算过的表达式结果代替 E 就可以了；</p>
 <h4 id="2-3-数组边界检查消除"><a class="header-anchor" href="#2-3-数组边界检查消除"></a>2.3 数组边界检查消除</h4>
@@ -5607,8 +5607,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

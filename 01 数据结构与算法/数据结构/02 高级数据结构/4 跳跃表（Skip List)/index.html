@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5507,7 +5507,7 @@ var _hmt = _hmt || [];
 <li>ConcurrentSkipListSet：在功能上对应 HashSet</li>
 </ul>
 <p>跳跃表以有序的方式在层次化的链表中保存元素， 效率和AVL树媲美 —— 查找、删除、添加等操作都可以在O(LogN)时间下完成， 并且比起二叉搜索树来说， 跳跃表的实现要简单直观得多。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1564025550780.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1564025550780.png" alt=""></p>
 <p>从图中可以看到， 跳跃表主要由以下部分构成：</p>
 <ul>
 <li>表头（head）：负责维护跳跃表的节点指针。</li>
@@ -5527,9 +5527,9 @@ var _hmt = _hmt || [];
 <li>Top指针指向最高层的第一个元素。</li>
 </ul>
 <h4 id="实例"><a class="header-anchor" href="#实例"></a>实例</h4>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1564025552840.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1564025552840.png" alt=""></p>
 <p>构造一个3层的跳跃表</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1564025552890.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1564025552890.png" alt=""></p>
 <h4 id="Skip-List构造步骤："><a class="header-anchor" href="#Skip-List构造步骤："></a>Skip List构造步骤：</h4>
 <ol>
 <li>给定一个有序的链表。</li>
@@ -5540,20 +5540,20 @@ var _hmt = _hmt || [];
 <h3 id="四、操作"><a class="header-anchor" href="#四、操作"></a>四、操作</h3>
 <h4 id="1）查找"><a class="header-anchor" href="#1）查找"></a>1）查找</h4>
 <p>查找19是否存在。从头结点开始，首先和9进行判断，此时大于9，然后和21进行判断，小于21，此时这个值肯定在9结点和21结点之间，此时，和17进行判断，大于17，然后和21进行判断，小于21，此时肯定在17结点和21结点之间，此时和19进行判断，找到了：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1564025552950.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1564025552950.jpg" alt=""></p>
 <h4 id="2）插入"><a class="header-anchor" href="#2）插入"></a>2）插入</h4>
 <p>插入包含如下几个操作：<br>
 1、查找到需要插入的位置<br>
 2、申请新的结点<br>
 3、调整指针。</p>
 <p>查找如下图的灰色的线所示  申请新的结点如17结点所示， 调整指向新结点17的指针以及17结点指向后续结点的指针。这里有一个小技巧，就是使用update数组保存大于17结点的位置，这样如果插入17结点的话，就指针调整update数组和17结点的指针、17结点和update数组指向的结点的指针。update数组的内容如红线所示，这些位置才是有可能更新指针的位置。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1564025553042.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1564025553042.jpg" alt=""></p>
 <h4 id="3）删除"><a class="header-anchor" href="#3）删除"></a>3）删除</h4>
 <p>删除操作类似于插入操作，包含如下3步：<br>
 1、查找到需要删除的结点<br>
 2、删除结点<br>
 3、调整指针</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1564025553066.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1564025553066.jpg" alt=""></p>
 <h3 id="参考"><a class="header-anchor" href="#参考"></a>参考</h3>
 <p>浅析SkipList跳跃表原理及代码实现
 <a href="https://blog.csdn.net/ict2014/article/details/17394259" target="_blank" rel="noopener">https://blog.csdn.net/ict2014/article/details/17394259</a></p>
@@ -5624,8 +5624,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

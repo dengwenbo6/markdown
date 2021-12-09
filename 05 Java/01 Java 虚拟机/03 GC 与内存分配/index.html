@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5490,7 +5490,7 @@ var _hmt = _hmt || [];
 引用计数法存在一个问题——<strong>循环引用</strong>，加入 a 引用 b，b 同时也引用 a，那么就存在 ab 的引用计数都不为 0 的情况。</p>
 <h4 id="1-2-可达性分析算法"><a class="header-anchor" href="#1-2-可达性分析算法"></a>1.2 可达性分析算法</h4>
 <p>一个对象的根节点，不是 GC Roots 的话，就可以被回收。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545389994797.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545389994797.jpg" alt=""></p>
 <p>Java 中可作为 GC Roots 的对象包括：</p>
 <ul>
 <li>虚拟机栈（本地变量表）引用的对象</li>
@@ -5553,7 +5553,7 @@ var _hmt = _hmt || [];
 <li>空间问题<br>
 产生大量不连续内存碎片，空间不够后会触发 GC</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545389996337.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545389996337.jpg" alt=""></p>
 <h4 id="2-2-复制算法"><a class="header-anchor" href="#2-2-复制算法"></a>2.2 复制算法</h4>
 <p>解决效率问题。</p>
 <h5 id="1）策略"><a class="header-anchor" href="#1）策略"></a>1）策略</h5>
@@ -5563,11 +5563,11 @@ var _hmt = _hmt || [];
 <p>用来回收<strong>新生代</strong>。新生代 98% 对象“朝生夕死”，所以不是 1：1 划分内存。</p>
 <p>将内存分为一块较大的 Eden 空间和两块较小的 Survivor 空间，每次使用 Eden 和其中一块 Survivor。回收时将存活的对象一次性复制到另一块 Survivor，清剩下的。</p>
 <p>Hotspot 默认 Eden:Survivor:Survivor = 8:1:1，若回收时 Survivor 空间不够，通过老年代进行分配<strong>担保</strong>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545389996488.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545389996488.jpg" alt=""></p>
 <h4 id="2-3-标记－整理"><a class="header-anchor" href="#2-3-标记－整理"></a>2.3 标记－整理</h4>
 <p>老年代，应对 100% 对象存活</p>
 <p>先标记可以被回收的对象，然后，让存活的对象向一端移动，最后直接清理掉另一端的内存。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545389996623.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545389996623.jpg" alt=""></p>
 <h4 id="2-4-分代收集算法"><a class="header-anchor" href="#2-4-分代收集算法"></a>2.4 分代收集算法</h4>
 <p>将内存根据生命周期分为几种，一般为新生代和老年代，然后根据特性，选择不同的回收算法。</p>
 <h3 id="3-算法实现"><a class="header-anchor" href="#3-算法实现"></a>3 算法实现</h3>
@@ -5604,7 +5604,7 @@ var _hmt = _hmt || [];
 <li>重新标记：修正并发标记期间产生变动的标记记录</li>
 <li>并发清除：</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545389996758.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545389996758.jpg" alt=""></p>
 <p>三个缺点：</p>
 <ul>
 <li>对CPU资源敏感</li>
@@ -5622,7 +5622,7 @@ var _hmt = _hmt || [];
 <li>将整个 Java 堆划分为多个大小相等的独立区域（Region），新生代和老年代不再物理隔离，都是一部分 Region（不需要连续）的集合。</li>
 <li>步骤： 初始标记、并发标记、最终标记、筛选回收</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545389997122.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545389997122.jpg" alt=""></p>
 <h5 id="2-ZGC"><a class="header-anchor" href="#2-ZGC"></a>2) ZGC</h5>
 <p>【todo】Java 11 的新功能，承诺在数TB的堆上具有非常低的暂停时间。</p>
 <ul>
@@ -5770,8 +5770,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

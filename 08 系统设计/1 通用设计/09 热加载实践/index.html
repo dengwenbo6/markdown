@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5526,15 +5526,15 @@ var _hmt = _hmt || [];
 </code></pre>
 <h5 id="2）IntelliJ-打包"><a class="header-anchor" href="#2）IntelliJ-打包"></a>2）IntelliJ 打包</h5>
 <p>打开 File -&gt; Project Structure -&gt; Artifacts，点击 + 号建立一个空 Jar 包</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626176945646.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626176945646.png" alt=""></p>
 <p>创建目录，要与接口所在的包名一致，然后添加【tatget】目录里编译好的接口【class】文件，点击 OK 结束</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626177017163.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626177017163.png" alt=""></p>
 <p>构建，得到接口 Jar 包</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626177068485.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626177068485.png" alt=""></p>
 <h4 id="2、实现接口-Jar-包"><a class="header-anchor" href="#2、实现接口-Jar-包"></a>2、实现接口 Jar 包</h4>
 <h5 id="1）引入接口-Jar-包"><a class="header-anchor" href="#1）引入接口-Jar-包"></a>1）引入接口 Jar 包</h5>
 <p>测试时可本地引入，规范之后可以发到版本仓库</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626177543051.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626177543051.png" alt=""></p>
 <h5 id="2）实现类"><a class="header-anchor" href="#2）实现类"></a>2）实现类</h5>
 <p>分别创建了 2 个实现类，共 3 个版本，实现引入的“接口”，生成测试 Jar 包。</p>
 <h6 id="2-1）实现类1"><a class="header-anchor" href="#2-1）实现类1"></a>2.1）实现类1</h6>
@@ -5566,15 +5566,15 @@ var _hmt = _hmt || [];
 </code></pre>
 <h5 id="3）IntelliJ-打包"><a class="header-anchor" href="#3）IntelliJ-打包"></a>3）IntelliJ 打包</h5>
 <p>一样打开 File -&gt; Project Structure -&gt; Artifacts，这次选择从 modules 创建</p>
-<img src="/images/1626177589609.png" width="80%" height="80%">
+<img src="/markdown/images/1626177589609.png" width="80%" height="80%">
 <p>选择好 main 函数，点 OK</p>
-<img src="/images/1626177627772.png" width="80%" height="80%">
+<img src="/markdown/images/1626177627772.png" width="80%" height="80%">
 <p>一样通过 build -&gt; build Artifacts 构建，对上面 3 个实现类，分别构建，得到 3 个实现 Jar 包。</p>
-<img src="/images/1626177648516.png" width="80%" height="80%">
+<img src="/markdown/images/1626177648516.png" width="80%" height="80%">
 <h4 id="3、测试热加载"><a class="header-anchor" href="#3、测试热加载"></a>3、测试热加载</h4>
 <h5 id="1）copy-实现-Jar-包"><a class="header-anchor" href="#1）copy-实现-Jar-包"></a>1）copy 实现 Jar 包</h5>
 <p>将上面生成的 3 个实现 Jar 包，重命名，copy 到测试项目，以方便测试。可以将其中一个 Jar 包引入到工程中，来测试引入与不引入时，类加载器工作的区别。或者放在对象存储上，一样的原理。</p>
-<img src="/images/1626177745379.png" width="50%" height="50%">
+<img src="/markdown/images/1626177745379.png" width="50%" height="50%">
 <h5 id="2）实现自定义类加载器"><a class="header-anchor" href="#2）实现自定义类加载器"></a>2）实现自定义类加载器</h5>
 <p>如果工程中已经引入过旧版“实现Jar包”，则需要实现自定义类加载器，否则用系统自带的类加载器就行。</p>
 <p>这里自定义类加载器，目的是避开双亲委派，重新加载已加载过的接口实现类，所以将其范围限制在实现Jar包的路径。</p>
@@ -5679,18 +5679,18 @@ public class HelloWorldClassLoader extends URLClassLoader {
     }
 </code></pre>
 <h5 id="4）效果展示"><a class="header-anchor" href="#4）效果展示"></a>4）效果展示</h5>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626177898003.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626177898003.gif" alt=""></p>
 <h3 id="四、实践"><a class="header-anchor" href="#四、实践"></a>四、实践</h3>
 <p>实际应用时，没有使用 demo 中的通过接口触发，而是提供了一个配置中心（包括开关及 jar 包地址），每个 pod 监听到配置中心上开启热加载时，会主动触发热加载配置中心上配置的 jar 包地址。然后提供了一键查询接口，检查各环境热加载的版本。</p>
 <h4 id="1、对象存储上传"><a class="header-anchor" href="#1、对象存储上传"></a>1、对象存储上传</h4>
 <p>将要更新的 jar 包上传到对象存储，为了安全起见，权限设为私有读，在程序中通过对象存储的 secretId、secretKey 生成签名来访问。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626177961046.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626177961046.png" alt=""></p>
 <h4 id="2、配置中心"><a class="header-anchor" href="#2、配置中心"></a>2、配置中心</h4>
 <p>在七彩石配置热加载开关及上传到 cos 中的 jar 包地址（也可以是其他地址）。对应的服务监听七彩石的配置变更，若开关打开则热加载配置的地址，热加载失败或者开关关闭，则回滚项目中自带的 jar 包。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626177993156.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626177993156.png" alt=""></p>
 <h4 id="3、服务发现查询"><a class="header-anchor" href="#3、服务发现查询"></a>3、服务发现查询</h4>
 <p>提供了一个接口查询热加载状态，通过服务发现应用项目的所有环境的实例，然后遍历请求，可以判断加载状态。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1626178019306.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1626178019306.png" alt=""></p>
 
 </div>
 
@@ -5756,8 +5756,8 @@ public class HelloWorldClassLoader extends URLClassLoader {
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

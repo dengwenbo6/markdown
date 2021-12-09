@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5501,7 +5501,7 @@ var _hmt = _hmt || [];
 <li>按照内存大小，将大文件分成若干长度为 l 的子文件（l 应小于内存的可使用容量），然后将各个子文件依次读入内存，使用适当的内部排序算法对其进行排序（排好序的子文件统称为“归并段”或者“顺段”），将排好序的归并段重新写入外存，为下一个子文件排序腾出内存空间；</li>
 <li>对得到的顺段进行合并，直至得到整个有序的文件为止。</li>
 </ol>
-<p><img src="/images/1558694020347.png" alt=""></p>
+<p><img src="/markdown/images/1558694020347.png" alt=""></p>
 <blockquote>
 <p>注意：在实际归并的过程中，由于内存容量的限制不能满足同时将 2 个归并段全部完整的读入内存进行归并，只能不断地取 2 个归并段中的每一小部分进行归并，通过不断地读数据和向外存写数据，直至 2 个归并段完成归并变为 1 个大的有序文件。</p>
 </blockquote>
@@ -5514,7 +5514,7 @@ var _hmt = _hmt || [];
 <p>为了避免在增加 k 值的过程中影响内部归并的效率，在进行 k-路归并时可以使用“败者树”来实现，该方法在增加 k 值时不会影响其内部归并的效率。</p>
 <h5 id="败者树实现内部归并"><a class="header-anchor" href="#败者树实现内部归并"></a>败者树实现内部归并</h5>
 <p>胜者树和败者树的区别就是：胜者树中的非终端结点中存储的是胜利（左右孩子相比较，谁最小即为胜者）的一方；而败者树中的非终端结点存储的是失败的一方。而在比较过程中，都是拿胜者去比较。</p>
-<p><img src="/images/1558694020407.png" alt=""></p>
+<p><img src="/markdown/images/1558694020407.png" alt=""></p>
 <ol>
 <li>首先将k个归并段中的首元素关键字依次存入b[0]–b[k-1]的叶子结点空间里，然后调用CreateLoserTree创建败者树，创建完毕之后最小的关键字下标（即所在归并段的序号）便被存入ls[0]中。然后不断循环：</li>
 <li>把ls[0]所存最小关键字来自于哪个归并段的序号得到为q，将该归并段的首元素输出到有序归并段里，然后把下一个元素关键字放入上一个元素本来所 在的叶子结点b[q]中，调用Adjust顺着b[q]这个叶子结点往上调整败者树直到新的最小的关键字被选出来，其下标同样存在ls[0]中。循环这个 操作过程直至所有元素被写到有序归并段里。</li>
@@ -5597,8 +5597,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

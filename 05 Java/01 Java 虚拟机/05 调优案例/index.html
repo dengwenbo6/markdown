@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5530,7 +5530,7 @@ var _hmt = _hmt || [];
 <li>为了实现客户端能实时地从服务器端接收考试数据，使用了逆向 AJAX 技术（也称为 Comet 或 Server Side Push），选用 CometD 1.1.1 作为服务端推送框架；</li>
 <li>测试期间发现服务端不定期抛出内存溢出；加入 -XX:+HeapDumpOnOutOfMemoryError 后抛出内存溢出时什么问题都没有，采用 jstat 观察 GC 并不频繁且 GC 回收正常；最后在内存溢出后从系统日志发现如下异常堆栈：</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545619151474.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545619151474.jpg" alt=""></p>
 <h5 id="2）问题分析-v3"><a class="header-anchor" href="#2）问题分析-v3"></a>2）问题分析</h5>
 <ul>
 <li>直接内存溢出的场景，垃圾收集时，虚拟机虽然会对直接内存进行回收，但它只能等老年代满了触发 Full GC 时顺便清理，否则只能等内存溢出时 catch 住然后调用 System.gc()，如果虚拟机还是不听（比如打开了-XX:+DisableExplictGC）则只能看着堆中还有许多空闲内存而溢出；</li>
@@ -5555,7 +5555,7 @@ var _hmt = _hmt || [];
 <li>一个基于 B/S 的 MIS 系统，硬件为两台 2 个 CPU、8GB 内存的 HP 系统，服务器是 WebLogic 9.2；</li>
 <li>正常运行一段时间后发现运行期间频繁出现集群节点的虚拟机进程自动关闭的现象，留下一个 hs_err_pid###.log，奔溃前不久都发生大量相同的异常，日志如下所示：</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545619153391.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545619153391.jpg" alt=""></p>
 <h5 id="2）问题分析-v5"><a class="header-anchor" href="#2）问题分析-v5"></a>2）问题分析</h5>
 <ul>
 <li>这是一个远端断开连接的异常，得知在 MIS 系统工作流的待办事项变化时需要通过 Web 服务通知 OA 门户系统；</li>
@@ -5570,7 +5570,7 @@ var _hmt = _hmt || [];
 <li>有一个后台 RPC 服务器，使用 64 位虚拟机，内存配置为 -Xms4g -Xmx8g -Xmn1g，使用 ParNew + CMS 的收集器组合；</li>
 <li>平时 Minor GC 时间约在 20 毫秒内，但业务需要每 10 分钟加载一个约 80MB 的数据文件到内存进行数据分析，这些数据会在内存中形成超过 100 万个 HashMap Entry，在这段时间里 Minor GC 会超过 500 毫秒，这个时间过长，GC 日志如下：</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545619153499.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545619153499.jpg" alt=""></p>
 <h5 id="2）问题分析-v6"><a class="header-anchor" href="#2）问题分析-v6"></a>2）问题分析</h5>
 <ul>
 <li>在分析数据文件期间，800M 的 Eden 空间在 Minor GC 后对象还是存活的，而 ParNew 垃圾收集器使用的是复制算法，把这些对象复制到 Survivor 并维持这些对象引用成为沉重的负担，导致 GC 时间变长；</li>
@@ -5586,7 +5586,7 @@ var _hmt = _hmt || [];
 <li>因为是桌面程序，所需内存不大（-Xmx256m），加入参数 -XX:+PrintGCApplicationStoppedTime -XX：PrintGCDateStamps -Xloggc:gclog.log 后，从日志文件确认是 GC 导致的，大部分的 GC 时间在 100ms 以内，但偶尔会出现一次接近 1 min 的 GC；</li>
 <li>加入参数 -XX：PrintReferenceGC 参数查看 GC 的具体日志信息，发现执行 GC 动作的时间并不长，但从准备开始 GC 到真正 GC 直接却消耗了大部分时间，如下所示：</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545619153811.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545619153811.jpg" alt=""></p>
 <h5 id="2）问题分析-v7"><a class="header-anchor" href="#2）问题分析-v7"></a>2）问题分析</h5>
 <ul>
 <li>初步怀疑是最小化时工作内存被自动交换到磁盘的页面文件中，这样发生 GC 时就有可能因为恢复页面文件的操作而导致不正常的 GC 停顿；</li>
@@ -5603,7 +5603,7 @@ var _hmt = _hmt || [];
 <li>采用 ParNew+CMS 的垃圾收集器组合；</li>
 <li>最终从 Eclipse 启动耗时 15 秒到 7 秒左右， eclipse.ini 配置如下：</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1545619153886.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1545619153886.jpg" alt=""></p>
 
 </div>
 
@@ -5669,8 +5669,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

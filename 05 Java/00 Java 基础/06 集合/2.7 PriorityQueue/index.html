@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5498,7 +5498,7 @@ var _hmt = _hmt || [];
 	<h3 id="1-总体介绍"><a class="header-anchor" href="#1-总体介绍"></a>1 总体介绍</h3>
 <p>优先队列的作用是能保证每次取出的元素都是队列中权值最小的。</p>
 <p>实现了<code>Queue</code>接口，不允许<code>null</code>，通过数组实现的<strong>小顶堆</strong>。</p>
-<p><img src="/images/1545011841614.png" alt="PriorityQueue_base.png"></p>
+<p><img src="/markdown/images/1545011841614.png" alt="PriorityQueue_base.png"></p>
 <p>父子节点的编号之间有如下关系：</p>
 <ul>
 <li><code>leftNo = parentNo*2+1</code></li>
@@ -5511,7 +5511,7 @@ var _hmt = _hmt || [];
 <h3 id="2-方法剖析"><a class="header-anchor" href="#2-方法剖析"></a>2 方法剖析</h3>
 <h4 id="2-1-add-和-offer"><a class="header-anchor" href="#2-1-add-和-offer"></a>2.1 add() 和 offer()</h4>
 <p><code>add(E e)</code>和<code>offer(E e)</code>都是向优先队列中插入元素，只是前者在插入失败时抛出异常，后则则会返回<code>false</code>。</p>
-<p><img src="/images/1545011841896.png" alt="PriorityQueue_offer.png"></p>
+<p><img src="/markdown/images/1545011841896.png" alt="PriorityQueue_offer.png"></p>
 <p>新加入的元素可能会破坏小顶堆的性质，因此需要进行必要的调整。</p>
 <pre><code class="language-Java">//offer(E e)
 public boolean offer(E e) {
@@ -5549,7 +5549,7 @@ private void siftUp(int k, E x) {
 <p><code>element()</code>和<code>peek()</code>都是获取但不删除队首元素，区别是当方法失败时前者抛出异常，后者返回<code>null</code>。<strong>直接返回数组<code>0</code>下标处的那个元素即可</strong>。</p>
 <h4 id="2-3-remove-和-poll"><a class="header-anchor" href="#2-3-remove-和-poll"></a>2.3 remove() 和 poll()</h4>
 <p><code>remove()</code>和<code>poll()</code>都是获取并删除队首元素，区别是当方法失败时前者抛出异常，后者返回<code>null</code>。由于删除操作会改变队列的结构，为维护小顶堆的性质，需要进行必要的调整。</p>
-<p><img src="/images/1545011842267.png" alt="PriorityQueue_poll.png"></p>
+<p><img src="/markdown/images/1545011842267.png" alt="PriorityQueue_poll.png"></p>
 <pre><code class="language-Java">public E poll() {
     if (size == 0)
         return null;
@@ -5592,7 +5592,7 @@ private void siftDown(int k, E x) {
 <li>删除的是最后一个元素。直接删除即可，不需要调整。</li>
 <li>删除的不是最后一个元素，从删除点开始以最后一个元素为参照调用一次<code>siftDown()</code>即可。</li>
 </ol>
-<p><img src="/images/1545011842636.png" alt="PriorityQueue_remove2.png"></p>
+<p><img src="/markdown/images/1545011842636.png" alt="PriorityQueue_remove2.png"></p>
 <p>具体代码如下：</p>
 <pre><code class="language-Java">//remove(Object o)
 public boolean remove(Object o) {
@@ -5677,8 +5677,8 @@ public boolean remove(Object o) {
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

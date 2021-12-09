@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5527,7 +5527,7 @@ Maven ：</p>
 <strong>对象池（ObjectPool）</strong>：一种容器，维护“对象列表”的存取，包含池对象工厂<br>
 <strong>池对象（PooledObject）</strong>：是对需要放到池里对象的一个包装类，添加了一些附加的信息<br>
 <strong>池对象工厂（PooledObjectFactory）</strong>：创建池对象的工厂类，提供池对象的创建、初始化、销毁和验证等功能<br>
-<img src="/images/1545712503961.png" alt="关系"></p>
+<img src="/markdown/images/1545712503961.png" alt="关系"></p>
 <p>即PooledObjectFactory创建PooledObject，放到ObjectPool里管理</p>
 <h3 id="1-对象池"><a class="header-anchor" href="#1-对象池"></a>1.对象池</h3>
 <p>使用对象池的一般步骤:创建一个池对象工厂，将该工厂注入到对象池中，当要取池对象，调用borrowObject，当要归还池对象时，调用returnObject，销毁池对象调用clear()，如果要连池对象工厂也一起销毁，则调用close()。</p>
@@ -5573,7 +5573,7 @@ Maven ：</p>
 2 若未获取到，检查对象池对象是否达到上限。若否，则调用factory的makeObject去创建一个对象，并放入allObjects中。若是，阻塞直到有对象被归还或阻塞超时报错。<br>
 3 得到对象之后，调用factory的activateObject方法激活对象，调用factory的validateObject方法验证对象<br>
 4 若验证失败，则调用destroy方法销毁对象；验证通过则返回对象<br>
-<img src="/images/1545712504116.png" alt="获取对象"></p>
+<img src="/markdown/images/1545712504116.png" alt="获取对象"></p>
 </li>
 <li>
 <p><strong>returnObject(Object obj)</strong> :<br>
@@ -5583,7 +5583,7 @@ Maven ：</p>
 4 对p进行passivateObject，钝化对象<br>
 5 更新p状态为IDLE<br>
 6 归还Pool：Pool的idle实例达到上限或者Pool已经关闭，销毁之，否则将p加入到idleObjects中。<br>
-<img src="/images/1545712504217.png" alt="归还对象"></p>
+<img src="/markdown/images/1545712504217.png" alt="归还对象"></p>
 </li>
 </ul>
 <h5 id="1-3-GenericObjectPoolConfig"><a class="header-anchor" href="#1-3-GenericObjectPoolConfig"></a>1.3 GenericObjectPoolConfig</h5>
@@ -5639,7 +5639,7 @@ GenericObjectPool就是根据GenericObjectPoolConfig的配置信息，使用Pool
     void markReturning();
 }
 </code></pre>
-<p><img src="/images/1545712504458.jpeg" alt="类关系图"></p>
+<p><img src="/markdown/images/1545712504458.jpeg" alt="类关系图"></p>
 <p>impl包中提供了PooledObject的默认实现<strong>DefaultPooledObject</strong>。要使用DefaultPooledObject封装，请使用</p>
 <pre><code>@Override
  public PooledObject&lt;Foo&gt; wrap(Foo foo) {
@@ -5658,7 +5658,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
 /**
- * @author wujun
+ * @author dengwenbo
  * @date 2018-04-19 16:10
  */
 public class PooledWebDriverFactory implements PooledObjectFactory&lt;WebDriver&gt; {
@@ -5776,8 +5776,8 @@ op.returnObject(webDriver);
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

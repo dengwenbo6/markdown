@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5490,7 +5490,7 @@ var _hmt = _hmt || [];
 <li>View（视图） - 视图代表模型包含的数据的可视化。</li>
 <li>Controller（控制器） - 控制器作用于模型和视图上。它控制数据流向模型对象，并在数据变化时更新视图。它使视图与模型分离开。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740278548.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740278548.png" alt=""></p>
 <h3 id="2-Business-Delegate（业务代表）"><a class="header-anchor" href="#2-Business-Delegate（业务代表）"></a>2. Business Delegate（业务代表）</h3>
 <p>业务代表模式用于对表示层和业务层解耦。它基本上是用来减少通信或对表示层代码中的业务层代码的远程查询功能。在业务层中我们有以下实体。</p>
 <ul>
@@ -5499,7 +5499,7 @@ var _hmt = _hmt || [];
 <li>查询服务 - 查找服务对象负责获取相关的业务实现，并提供业务对象对业务代表对象的访问。</li>
 <li>业务服务 - 业务服务接口。实现了该业务服务的实体类，提供了实际的业务实现逻辑。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740278706.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740278706.png" alt=""></p>
 <h3 id="3-Composite-Entity（组合实体）"><a class="header-anchor" href="#3-Composite-Entity（组合实体）"></a>3. Composite Entity（组合实体）</h3>
 <p>组合实体模式用在 EJB 持久化机制中。</p>
 <p>一个组合实体是一个 EJB 实体 bean，代表了对象的图解。当更新一个组合实体时，内部依赖对象 beans 会自动更新，因为它们是由 EJB 实体 bean 管理的。</p>
@@ -5510,7 +5510,7 @@ var _hmt = _hmt || [];
 <li>依赖对象（Dependent Object） - 依赖对象是一个持续生命周期依赖于粗粒度对象的对象。</li>
 <li>策略（Strategies） - 策略表示如何实现组合实体。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740278780.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740278780.jpg" alt=""></p>
 <h3 id="4-Data-Access-Object（数据访问对象）"><a class="header-anchor" href="#4-Data-Access-Object（数据访问对象）"></a>4. Data Access Object（数据访问对象）</h3>
 <p>DAO 模式用于把低级的数据访问 API 或操作从高级的业务服务中分离出来。</p>
 <p>以下是数据访问对象模式的参与者。</p>
@@ -5519,7 +5519,7 @@ var _hmt = _hmt || [];
 <li>数据访问对象实体类（Data Access Object concrete class） - 该类实现了上述的接口。该类负责从数据源获取数据，数据源可以是数据库，也可以是 xml，或者是其他的存储机制。</li>
 <li>模型对象/数值对象（Model Object/Value Object） - 该对象是简单的 POJO，包含了 get/set 方法来存储通过使用 DAO 类检索到的数据。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740278832.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740278832.jpg" alt=""></p>
 <h3 id="5-Front-Controller（前端控制器）"><a class="header-anchor" href="#5-Front-Controller（前端控制器）"></a>5. Front Controller（前端控制器）</h3>
 <p>前端控制器模式是用来提供一个集中的请求处理机制，所有的请求都将由一个单一的处理程序处理。该处理程序可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
 <p>以下是这种设计模式的实体。</p>
@@ -5528,7 +5528,7 @@ var _hmt = _hmt || [];
 <li>调度器（Dispatcher） - 前端控制器可能使用一个调度器对象来调度请求到相应的具体处理程序。</li>
 <li>视图（View） - 视图是为请求而创建的对象。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740278904.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740278904.jpg" alt=""></p>
 <h3 id="6-Intercepting-Filter（拦截过滤器）"><a class="header-anchor" href="#6-Intercepting-Filter（拦截过滤器）"></a>6. Intercepting Filter（拦截过滤器）</h3>
 <p>拦截过滤器模式用于对应用程序的请求或响应做一些预处理/后处理。定义过滤器，并在把请求传给实际目标应用程序之前应用在请求上。过滤器可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
 <p>以下是这种设计模式的实体。</p>
@@ -5539,7 +5539,7 @@ var _hmt = _hmt || [];
 <li>过滤管理器（Filter Manager） - 过滤管理器管理过滤器和过滤器链。</li>
 <li>客户端（Client） - Client 是向 Target 对象发送请求的对象。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740278948.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740278948.jpg" alt=""></p>
 <h3 id="7-Service-Locator（服务定位器）"><a class="header-anchor" href="#7-Service-Locator（服务定位器）"></a>7. Service Locator（服务定位器）</h3>
 <p>服务定位器模式用在我们想使用 JNDI 查询定位各种服务的时候。考虑到为某个服务查找 JNDI 的代价很高，服务定位器模式充分利用了缓存技术。在首次请求某个服务时，服务定位器在 JNDI 中查找服务，并缓存该服务对象。当再次请求相同的服务时，服务定位器会在它的缓存中查找，这样可以在很大程度上提高应用程序的性能。</p>
 <p>以下是这种设计模式的实体。</p>
@@ -5550,7 +5550,7 @@ var _hmt = _hmt || [];
 <li>缓存（Cache） - 缓存存储服务的引用，以便复用它们。</li>
 <li>客户端（Client） - Client 是通过 ServiceLocator 调用服务的对象。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740279060.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740279060.jpg" alt=""></p>
 <h3 id="8-Transfer-Object（传输对象）"><a class="header-anchor" href="#8-Transfer-Object（传输对象）"></a>8. Transfer Object（传输对象）</h3>
 <p>传输对象模式用于从客户端向服务器一次性传递带有多个属性的数据。</p>
 <p>传输对象也被称为数值对象。传输对象是一个具有 getter/setter 方法的简单的 POJO 类，它是可序列化的，所以它可以通过网络传输。它没有任何的行为。</p>
@@ -5561,7 +5561,7 @@ var _hmt = _hmt || [];
 <li>传输对象（Transfer Object） - 简单的 POJO，只有设置/获取属性的方法。</li>
 <li>客户端（Client） - 客户端可以发送请求或者发送传输对象到业务对象。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547740279107.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547740279107.jpg" alt=""></p>
 
 </div>
 
@@ -5627,8 +5627,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

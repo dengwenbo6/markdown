@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5503,11 +5503,11 @@ var _hmt = _hmt || [];
 <p>哈希表有两种实现方式，开放地址方式和冲突链表方式。</p>
 <p>HashMap采用的是冲突链表方式（数组和链表）。</p>
 <h4 id="1）JDK1-7"><a class="header-anchor" href="#1）JDK1-7"></a>1）JDK1.7</h4>
-<p><img src="/images/1545011839762.png" alt=""></p>
+<p><img src="/markdown/images/1545011839762.png" alt=""></p>
 <h4 id="2）JDK1-8"><a class="header-anchor" href="#2）JDK1-8"></a>2）JDK1.8</h4>
 <p>当 Hash 冲突严重时，链表越来越长，查询效率越来越低；时间复杂度为 <code>O(N)</code>。</p>
 <p>JDK1.8 优化了查询效率，若链表数超过阈值(默认为8)，链表转为<strong>红黑树</strong>，时间复杂度<code>O(logn)</code>。若链表数降到阈值(默认为6)以下，又恢复成链表。</p>
-<p><img src="/images/1545011840049.jpg" alt=""></p>
+<p><img src="/markdown/images/1545011840049.jpg" alt=""></p>
 <h4 id="3）重要参数"><a class="header-anchor" href="#3）重要参数"></a>3）重要参数</h4>
 <p>有两个重要的参数：</p>
 <ul>
@@ -5549,7 +5549,7 @@ h &amp; (length-1) 等价于 h%length，因为length是 <code>2^n</code>，lengt
 </li>
 <li>然后依次遍历冲突链表，通过 key.equals(k) 方法来判断是否是要找的那个 entry 。</li>
 </ol>
-<p><img src="/images/1545011840175.png" alt=""></p>
+<p><img src="/markdown/images/1545011840175.png" alt=""></p>
 <h4 id="2）put"><a class="header-anchor" href="#2）put"></a>2）put()</h4>
 <p>首先 get()，如已含则直接返回。否则通过<code>addEntry</code>插入新的 entry。</p>
 <ul>
@@ -5581,7 +5581,7 @@ h &amp; (length-1) 等价于 h%length，因为length是 <code>2^n</code>，lengt
 </ul>
 </li>
 </ul>
-<p><img src="/images/1545011840453.png" alt=""></p>
+<p><img src="/markdown/images/1545011840453.png" alt=""></p>
 <pre><code>void addEntry(int hash, K key, V value, int bucketIndex) {
     //threshold=The next size value at which to resize (capacity * load factor).
     if ((size &gt;= threshold) &amp;&amp; (null != table[bucketIndex])) {
@@ -5715,8 +5715,8 @@ h &amp; (length-1) 等价于 h%length，因为length是 <code>2^n</code>，lengt
 		</span>
 	
 	<br>
-	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

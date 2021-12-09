@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5493,45 +5493,45 @@ var _hmt = _hmt || [];
 <ul>
 <li>下图展示一个分布式系统的最初阶段，此时只有 Follower 没有 Leader。Node A 等待一个随机的竞选超时时间之后，没收到 Leader 发来的心跳包，因此进入竞选阶段。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579593914257.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579593914257.gif" alt=""></p>
 <ul>
 <li>此时 Node A 发送投票请求给其它所有节点。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579593941522.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579593941522.gif" alt=""></p>
 <ul>
 <li>其它节点会对请求进行回复，如果超过一半的节点回复了，那么该 Candidate 就会变成 Leader。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579593973024.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579593973024.gif" alt=""></p>
 <ul>
 <li>之后 Leader 会周期性地发送心跳包给 Follower，Follower 接收到心跳包，会重新开始计时。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579594007723.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579594007723.gif" alt=""></p>
 <h3 id="2-多个-Candidate-竞选"><a class="header-anchor" href="#2-多个-Candidate-竞选"></a>2 多个 Candidate 竞选</h3>
 <ul>
 <li>如果有多个 Follower 成为 Candidate，并且所获得票数相同，那么就需要重新开始投票。例如下图中 Node B 和 Node D 都获得两票，需要重新开始投票。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579594059336.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579594059336.gif" alt=""></p>
 <ul>
 <li>由于每个节点设置的随机竞选超时时间不同，因此下一次再次出现多个 Candidate 并获得同样票数的概率很低。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579594086399.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579594086399.gif" alt=""></p>
 <h3 id="3-数据同步"><a class="header-anchor" href="#3-数据同步"></a>3 数据同步</h3>
 <ul>
 <li>来自客户端的修改都会被传入 Leader。注意该修改还未被提交，只是写入日志中。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579594117304.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579594117304.gif" alt=""></p>
 <ul>
 <li>Leader 会把修改复制到所有 Follower。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579594142659.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579594142659.gif" alt=""></p>
 <ul>
 <li>Leader 会等待大多数的 Follower 也进行了修改，然后才将修改提交。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579594172568.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579594172568.gif" alt=""></p>
 <ul>
 <li>此时 Leader 会通知的所有 Follower 让它们也提交修改，此时所有节点的值达成一致。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1579594198611.gif" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1579594198611.gif" alt=""></p>
 
 </div>
 
@@ -5597,8 +5597,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

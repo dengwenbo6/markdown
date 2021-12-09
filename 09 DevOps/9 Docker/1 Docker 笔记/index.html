@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5489,13 +5489,13 @@ var _hmt = _hmt || [];
 <h3 id="2-Docker-架构"><a class="header-anchor" href="#2-Docker-架构"></a>2 Docker 架构</h3>
 <h4 id="2-1-架构"><a class="header-anchor" href="#2-1-架构"></a>2.1 架构</h4>
 <p>Docker 使用 Go 语言进行开发，使用的是客户端/服务器（C/S）架构的模式。</p>
-<p><img src="/images/1545712505423.png" alt="Docker架构"></p>
+<p><img src="/markdown/images/1545712505423.png" alt="Docker架构"></p>
 <ul>
 <li>Docker 客户端：是主要的用户与 Docker 交互方式。它接收用户指令并且与背后的 Docker 守护进程通信。</li>
 <li>Docker 守护进程：用户并不直接和守护进程进行交互，而是通过 Docker 客户端间接和其通信。</li>
 </ul>
 <h4 id="2-2-技术依赖"><a class="header-anchor" href="#2-2-技术依赖"></a>2.2 技术依赖</h4>
-<p><img src="/images/1545712505458.png" alt="Docker技术依赖"></p>
+<p><img src="/markdown/images/1545712505458.png" alt="Docker技术依赖"></p>
 <p>Docker 依赖 linux kernel 三项最基本的技术。</p>
 <ul>
 <li>namespaces：命名空间，对 Docker 容器进行隔离。让容器拥有独立的 hostname，ip，pid;</li>
@@ -5579,7 +5579,7 @@ ctrl+p ctrl+q ：后台运行</li>
 <pre><code># 指明基础镜像
 From ubutu
 # 构建者信息
-MAINTAINER wujun
+MAINTAINER dengwenbo
 # 镜像操作指令
 apt/sourcelist.list
 RUN apt-get update &amp;&amp; apt-get install -y ngnix
@@ -5640,7 +5640,7 @@ ONBUILD [INSTRUCTION]<br>
 </ol>
 <h3 id="6-Docker-持续集成、自动交付、自动部署"><a class="header-anchor" href="#6-Docker-持续集成、自动交付、自动部署"></a>6 Docker 持续集成、自动交付、自动部署</h3>
 <p>Docker 加上 github+jenkins（domeOS）+ registry 可以搭建一个完整的自动化流程。</p>
-<p><img src="/images/1545712505550.png" alt="持续集成和自动部署的原理"></p>
+<p><img src="/markdown/images/1545712505550.png" alt="持续集成和自动部署的原理"></p>
 <ol>
 <li>RD 推送代码到 git 仓库或者 svn 等代码服务器上面，git 服务器就会通过 hook 通知 jenkins。</li>
 <li>jenkine（或 domeOS） 克隆 git 代码到本地，并通过 dockerFile 文件进行编译 。</li>
@@ -5729,8 +5729,8 @@ CMD java -jar ./$JAR_NAME --spring.profiles.active=${active}
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

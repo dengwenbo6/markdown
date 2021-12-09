@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5500,30 +5500,30 @@ var _hmt = _hmt || [];
 <h4 id="1-1-轮询（Round-Robin）"><a class="header-anchor" href="#1-1-轮询（Round-Robin）"></a>1.1 轮询（Round Robin）</h4>
 <p>轮询算法把每个请求轮流发送到每个服务器上。</p>
 <p>下图中，一共有 6 个客户端产生了 6 个请求，这 6 个请求按 (1, 2, 3, 4, 5, 6) 的顺序发送。(1, 3, 5) 的请求会被发送到服务器 1，(2, 4, 6) 的请求会被发送到服务器 2。</p>
-<p><img src="/images/1579596595392.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596595392.jpg" alt=""></p>
 <p>该算法比较适合每个服务器的性能差不多的场景，如果有性能存在差异的情况下，那么性能较差的服务器可能无法承担过大的负载（下图的 Server 2）。</p>
-<p><img src="/images/1579596596676.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596596676.jpg" alt=""></p>
 <h4 id="1-2-加权轮询（Weighted-Round-Robbin）"><a class="header-anchor" href="#1-2-加权轮询（Weighted-Round-Robbin）"></a>1.2 加权轮询（Weighted Round Robbin）</h4>
 <p>加权轮询是在轮询的基础上，根据服务器的性能差异，为服务器赋予一定的权值，性能高的服务器分配更高的权值。</p>
 <p>例如下图中，服务器 1 被赋予的权值为 5，服务器 2 被赋予的权值为 1，那么 (1, 2, 3, 4, 5) 请求会被发送到服务器 1，(6) 请求会被发送到服务器 2。</p>
-<p><img src="/images/1579596596802.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596596802.jpg" alt=""></p>
 <h4 id="1-3-最少连接（least-Connections）"><a class="header-anchor" href="#1-3-最少连接（least-Connections）"></a>1.3 最少连接（least Connections）</h4>
 <p>由于每个请求的连接时间不一样，使用轮询或者加权轮询算法的话，可能会让一台服务器当前连接数过大，而另一台服务器的连接过小，造成负载不均衡。</p>
 <p>例如下图中，(1, 3, 5) 请求会被发送到服务器 1，但是 (1, 3) 很快就断开连接，此时只有 (5) 请求连接服务器 1；(2, 4, 6) 请求被发送到服务器 2，只有 (2) 的连接断开，此时 (6, 4) 请求连接服务器 2。该系统继续运行时，服务器 2 会承担过大的负载。</p>
-<p><img src="/images/1579596596910.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596596910.jpg" alt=""></p>
 <p>最少连接算法就是将请求发送给当前最少连接数的服务器上。</p>
 <p>例如下图中，服务器 1 当前连接数最小，那么新到来的请求 6 就会被发送到服务器 1 上。</p>
-<p><img src="/images/1579596597022.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596597022.jpg" alt=""></p>
 <h4 id="1-4-加权最少连接（Weighted-Least-Connection）"><a class="header-anchor" href="#1-4-加权最少连接（Weighted-Least-Connection）"></a>1.4 加权最少连接（Weighted Least Connection）</h4>
 <p>在最少连接的基础上，根据服务器的性能为每台服务器分配权重，再根据权重计算出每台服务器能处理的连接数。</p>
 <h4 id="1-5-随机算法（Random）"><a class="header-anchor" href="#1-5-随机算法（Random）"></a>1.5 随机算法（Random）</h4>
 <p>把请求随机发送到服务器上。</p>
 <p>和轮询算法类似，该算法比较适合服务器性能差不多的场景。</p>
-<p><img src="/images/1579596597149.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596597149.jpg" alt=""></p>
 <h4 id="1-6-源地址哈希法-IP-Hash"><a class="header-anchor" href="#1-6-源地址哈希法-IP-Hash"></a>1.6 源地址哈希法 (IP Hash)</h4>
 <p>源地址哈希通过对客户端 IP 计算哈希值之后，再对服务器数量取模得到目标服务器的序号。</p>
 <p>可以保证同一 IP 的客户端的请求会转发到同一台服务器上，用来实现会话粘滞（Sticky Session）</p>
-<p><img src="/images/1579596597289.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596597289.jpg" alt=""></p>
 <h3 id="2-转发实现"><a class="header-anchor" href="#2-转发实现"></a>2 转发实现</h3>
 <h4 id="2-1-HTTP-重定向"><a class="header-anchor" href="#2-1-HTTP-重定向"></a>2.1 HTTP 重定向</h4>
 <p>HTTP 重定向负载均衡服务器使用某种负载均衡算法计算得到服务器的 IP 地址之后，将该地址写入 HTTP 重定向报文中，状态码为 302。客户端收到重定向报文之后，需要重新向服务器发起请求。</p>
@@ -5533,7 +5533,7 @@ var _hmt = _hmt || [];
 <li>HTTP 负载均衡器处理能力有限，会限制集群的规模。</li>
 </ul>
 <p>该负载均衡转发的缺点比较明显，实际场景中很少使用它。</p>
-<p><img src="/images/1579596597404.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596597404.jpg" alt=""></p>
 <h4 id="2-2-DNS-域名解析"><a class="header-anchor" href="#2-2-DNS-域名解析"></a>2.2 DNS 域名解析</h4>
 <p>在 DNS 解析域名的同时使用负载均衡算法计算服务器 IP 地址。</p>
 <p>优点：</p>
@@ -5545,7 +5545,7 @@ var _hmt = _hmt || [];
 <li>由于 DNS 具有多级结构，每一级的域名记录都可能被缓存，当下线一台服务器需要修改 DNS 记录时，需要过很长一段时间才能生效。</li>
 </ul>
 <p>大型网站基本使用了 DNS 做为第一级负载均衡手段，然后在内部使用其它方式做第二级负载均衡。也就是说，域名解析的结果为内部的负载均衡服务器 IP 地址。</p>
-<p><img src="/images/1579596597471.jpg" alt=""></p>
+<p><img src="/markdown/images/1579596597471.jpg" alt=""></p>
 <h4 id="2-3-反向代理服务器"><a class="header-anchor" href="#2-3-反向代理服务器"></a>2.3 反向代理服务器</h4>
 <p>反向代理服务器位于源服务器前面，用户的请求需要先经过反向代理服务器才能到达源服务器。反向代理可以用来进行缓存、日志记录等，同时也可以用来做为负载均衡服务器。</p>
 <p>在这种负载均衡转发方式下，客户端不直接请求源服务器，因此源服务器不需要外部 IP 地址，而反向代理需要配置内部和外部两套 IP 地址。</p>
@@ -5638,8 +5638,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

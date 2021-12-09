@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5491,7 +5491,7 @@ var _hmt = _hmt || [];
 <p>JAVA WEB 中 Apache Tomcat 对 Encoding 的处理，Struts2 的拦截器，jsp servlet 的 Filter。</p>
 <h5 id="实现"><a class="header-anchor" href="#实现"></a>实现</h5>
 <p>我们创建抽象类 AbstractLogger，带有详细的日志记录级别。然后我们创建三种类型的记录器，都扩展了 AbstractLogger。每个记录器消息的级别是否属于自己的级别，如果是则相应地打印出来，否则将不打印并把消息传给下一个记录器。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724471338.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724471338.jpg" alt=""></p>
 <h3 id="2-Command（命令）"><a class="header-anchor" href="#2-Command（命令）"></a>2. Command（命令）</h3>
 <p>将一个请求封装为一个对象，可用不同的请求对客户进行参数化；对请求排队或者记录请求日志，以及支持可撤销的操作。</p>
 <ul>
@@ -5501,24 +5501,24 @@ var _hmt = _hmt || [];
 <li>Receiver: 接收者</li>
 <li>Client:客户类</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724473923.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724473923.jpg" alt=""></p>
 <h5 id="应用实例-v2"><a class="header-anchor" href="#应用实例-v2"></a>应用实例</h5>
 <p>宏命令</p>
 <h3 id="3-Interpreter（解释器）"><a class="header-anchor" href="#3-Interpreter（解释器）"></a>3. Interpreter（解释器）</h3>
 <p>给定一个语言，定义它的文法表示，并定义一个解释器，这个解释器使用该标识来解释语言中的句子。</p>
 <p>可利用场景比较少，JAVA 中如果碰到可以用 expression4J 代替。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475221.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475221.jpg" alt=""></p>
 <h5 id="模式实例"><a class="header-anchor" href="#模式实例"></a>模式实例</h5>
 <p>SQL 解析、符号处理引擎、正则表达式</p>
 <h3 id="4-Iterator（迭代器）"><a class="header-anchor" href="#4-Iterator（迭代器）"></a>4. Iterator（迭代器）</h3>
 <p>提供一种方法顺序访问一个聚合对象中各个元素, 而又无须暴露该对象的内部表示。</p>
 <p>把在元素之间游走的责任交给迭代器，而不是聚合对象。定义接口：hasNext, next。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475622.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475622.jpg" alt=""></p>
 <h5 id="应用实例-v3"><a class="header-anchor" href="#应用实例-v3"></a>应用实例</h5>
 <p>JAVA 中的 iterator。</p>
 <h3 id="5-Mediator（中介者）"><a class="header-anchor" href="#5-Mediator（中介者）"></a>5. Mediator（中介者）</h3>
 <p>用一个中介对象来封装一系列的对象交互，中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475649.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475649.png" alt=""></p>
 <h5 id="角色"><a class="header-anchor" href="#角色"></a>角色</h5>
 <ul>
 <li>Mediator: 抽象中介者</li>
@@ -5526,7 +5526,7 @@ var _hmt = _hmt || [];
 <li>Colleague: 抽象同事类</li>
 <li>ConcreteColleague: 具体同事类</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475707.jpeg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475707.jpeg" alt=""></p>
 <h5 id="实例"><a class="header-anchor" href="#实例"></a>实例</h5>
 <p>MVC 框架，其中C（控制器）就是 M（模型）和 V（视图）的中介者。</p>
 <h3 id="6-Memento（备忘录）"><a class="header-anchor" href="#6-Memento（备忘录）"></a>6. Memento（备忘录）</h3>
@@ -5544,11 +5544,11 @@ var _hmt = _hmt || [];
 <li>Originator 创建并在 Memento 对象中存储状态。</li>
 <li>Caretaker 对象负责从 Memento 中恢复对象的状态。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475736.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475736.jpg" alt=""></p>
 <h3 id="7-Observer（观察者）"><a class="header-anchor" href="#7-Observer（观察者）"></a>7. Observer（观察者）</h3>
 <p>定义对象间的一种一对多的依赖关系，当一个对象被修改时，则会自动通知它的依赖对象。</p>
 <p>又叫做发布-订阅（Publish/Subscribe）模式、模型-视图（Model/View）模式、源-监听器（Source/Listener）模式或从属者（Dependents）模式。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475891.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475891.jpg" alt=""></p>
 <p>Subject 类</p>
 <pre><code>import java.util.ArrayList;
 import java.util.List;
@@ -5598,7 +5598,7 @@ subject.setState(15);
 <li>State: 抽象状态类</li>
 <li>ConcreteState: 具体状态类</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475919.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475919.png" alt=""></p>
 <pre><code>public class StatePatternDemo {
    public static void main(String[] args) {
       Context context = new Context();
@@ -5628,7 +5628,7 @@ subject.setState(15);
 <li>Strategy: 抽象策略类</li>
 <li>ConcreteStrategy: 具体策略类</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724475972.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724475972.jpg" alt=""></p>
 <pre><code>public class StrategyPatternDemo {
    public static void main(String[] args) {
       Context context = new Context(new OperationAdd());    
@@ -5653,11 +5653,11 @@ subject.setState(15);
 <p>定义一个操作中的算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。</p>
 <h5 id="实现-v3"><a class="header-anchor" href="#实现-v3"></a>实现</h5>
 <p>我们将创建一个定义操作的 Game 抽象类，其中，模板方法设置为 final，这样它就不会被重写。Cricket 和 Football 是扩展了 Game 的实体类，它们重写了抽象类的方法。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724471619.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724471619.jpg" alt=""></p>
 <h3 id="11-Visitor（访问者）"><a class="header-anchor" href="#11-Visitor（访问者）"></a>11. Visitor（访问者）</h3>
 <p>主要将数据结构与数据操作分离。</p>
 <p>使用一个访问者类，改变元素类的执行算法。在被访问的类里面加一个对外提供接待访问者的接口。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1547724471651.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1547724471651.jpg" alt=""></p>
 <h3 id="12-Null-Object（空对象）"><a class="header-anchor" href="#12-Null-Object（空对象）"></a>12. Null Object（空对象）</h3>
 <p>一个空对象取代 NULL 对象实例的检查。</p>
 <p>在空对象模式中，我们创建一个指定各种要执行的操作的抽象类和扩展该类的实体类，还创建一个未对该类做任何实现的空对象类，该空对象类将无缝地使用在需要检查空值的地方。</p>
@@ -5740,8 +5740,8 @@ subject.setState(15);
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

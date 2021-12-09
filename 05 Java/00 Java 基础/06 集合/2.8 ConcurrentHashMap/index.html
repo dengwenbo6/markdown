@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5500,7 +5500,7 @@ var _hmt = _hmt || [];
 <h3 id="1-1-总体介绍"><a class="header-anchor" href="#1-1-总体介绍"></a>1.1 总体介绍</h3>
 <p><code>ConcurrentHashMap</code>采用了分段锁技术，效率较<code>Hashtable</code>高，不允许空值<code>null</code>。</p>
 <p><code>ConcurrentHashMap</code>是 <code>Segment</code> 数组。<code>Segment</code> 继承于<code>ReentrantLock</code>，可以充当锁。</p>
-<p><img src="/images/1545011842925.jpg" alt=""></p>
+<p><img src="/markdown/images/1545011842925.jpg" alt=""></p>
 <h3 id="1-2-方法剖析"><a class="header-anchor" href="#1-2-方法剖析"></a>1.2 方法剖析</h3>
 <h4 id="1）put"><a class="header-anchor" href="#1）put"></a>1）put</h4>
 <p>虽然<code>HashEntry</code>中的<code>value</code>是用<code>volatile</code>关键词修饰的，但是并不能保证并发的原子性，所以 put 操作时仍然需要加锁处理。</p>
@@ -5543,7 +5543,7 @@ var _hmt = _hmt || [];
 <h3 id="2-1-总体介绍"><a class="header-anchor" href="#2-1-总体介绍"></a>2.1 总体介绍</h3>
 <p>类似<code>HashMap</code>，遍历链表效率太低，1.8 加了<strong>红黑树</strong>。</p>
 <p><code>Segment</code>抛弃了原有的基于<code>ReentrantLock</code>的分段锁，而采用了 CAS（空桶） + synchronized（非空） 来保证并发安全性。</p>
-<p><img src="/images/1545011842998.jpg" alt=""></p>
+<p><img src="/markdown/images/1545011842998.jpg" alt=""></p>
 <h3 id="2-2-方法剖析"><a class="header-anchor" href="#2-2-方法剖析"></a>2.2 方法剖析</h3>
 <h4 id="1）put-v2"><a class="header-anchor" href="#1）put-v2"></a>1）put</h4>
 <ol>
@@ -5678,8 +5678,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

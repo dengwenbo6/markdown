@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5588,7 +5588,7 @@ var _hmt = _hmt || [];
 <h4 id="1-2-ArrayDeque"><a class="header-anchor" href="#1-2-ArrayDeque"></a>1.2 ArrayDeque</h4>
 <p><code>ArrayDeque</code> 底层通过“循环数组”实现。非线程安全，不允许 <code>null</code> 元素。</p>
 <p><code>head</code> 指向首端第一个有效元素，<code>tail</code> 指向尾端第一个可以插入元素的空位</p>
-<p><img src="/images/1545011836585.png" alt="ArrayDeque_base.png"></p>
+<p><img src="/markdown/images/1545011836585.png" alt="ArrayDeque_base.png"></p>
 <h3 id="2-方法剖析"><a class="header-anchor" href="#2-方法剖析"></a>2 方法剖析</h3>
 <h4 id="2-1-添加"><a class="header-anchor" href="#2-1-添加"></a>2.1 添加</h4>
 <p><strong>空间问题在插入之后解决</strong>，因为 <code>tail</code> 总是指向下一个可插入的空位，也就意味着 <code>elements</code>数组至少有一个空位，所以插入元素的时候不用考虑空间问题。</p>
@@ -5617,7 +5617,7 @@ var _hmt = _hmt || [];
 因为 <code>elements.length</code> 必需是 <code>2</code> 的指数倍，<code>elements - 1</code> 就是二进制低位全 <code>1</code> ，跟 <code>head - 1</code> 相与之后就起到了取模的作用，如果 <code>head - 1</code> 为负数（其实只可能是-1），则相当于对其取相对于<code>elements.length</code>的补码。</p>
 <h5 id="4）扩容"><a class="header-anchor" href="#4）扩容"></a>4）扩容</h5>
 <p>扩容函数<code>doubleCapacity()</code>，逻辑是申请一个更大的数组（原数组的两倍），然后将原数组复制过去。</p>
-<p><img src="/images/1545011836851.png" alt="ArrayDeque_doubleCapacity.png"></p>
+<p><img src="/markdown/images/1545011836851.png" alt="ArrayDeque_doubleCapacity.png"></p>
 <p>复制分两次进行，第一次复制<code>head</code>右边的元素，第二次复制<code>head</code>左边的元素。</p>
 <pre><code>private void doubleCapacity() {
     assert head == tail;
@@ -5737,8 +5737,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5507,14 +5507,14 @@ var _hmt = _hmt || [];
 </ol>
 <h3 id="1、红黑树与2-3树的等价性"><a class="header-anchor" href="#1、红黑树与2-3树的等价性"></a>1、红黑树与2-3树的等价性</h3>
 <p>参考下图，再红黑树中使用两个节点来模拟 2-3 树中的 3-节点，使用红色来表示 b 与 c 是并列的关系，如果来表示这条红色的边呢，其实就是让 b 这个节点变为红色，而 b 只有一个父节点，所以其与父节点的连线也就是红色，本质上就是把并列关系存储在子节点中。</p>
-<p><img src="/images/1558610875365.png" alt=""></p>
+<p><img src="/markdown/images/1558610875365.png" alt=""></p>
 <ul>
 <li>黑色节点，对应 2-3树中的 2-节点。</li>
 <li>红色节点和它的父节点一起表示 2-3 树中的 3-节点。</li>
 <li>红黑树中所有的红色节点都是左倾斜的。</li>
 </ul>
 <p>用红黑树来表示对等的 2-3 树：</p>
-<p><img src="/images/1558610878459.png" alt=""></p>
+<p><img src="/markdown/images/1558610878459.png" alt=""></p>
 <p>再来回顾以下上面关于红黑树的 5 条定义：</p>
 <ul>
 <li>每个节点要么是红色的，要么是黑色的：这是显然的。</li>
@@ -5567,15 +5567,15 @@ private static final boolean BLACK = false;
 <ul>
 <li>情况1：当插入第一个节点时，设置其颜色为黑色。</li>
 </ul>
-<p><img src="/images/1558610879302.png" alt=""></p>
+<p><img src="/markdown/images/1558610879302.png" alt=""></p>
 <ul>
 <li>情况2：当插入第二个节点 37 时，需要插入到根节点的左侧，则直接插入即可，形式等同于 2-3树 的 3-节点，保持了红黑树的性质。</li>
 </ul>
-<p><img src="/images/1558610879505.png" alt=""></p>
+<p><img src="/markdown/images/1558610879505.png" alt=""></p>
 <ul>
 <li>情况3：当根节点是 37，需要插入第二个节点 42 时，需要插入到根节点的右侧，红色节点就出现在黑节点的右侧了，需要进行 左旋转 以维护红黑树的性质，除此之外，我们还需要对节点的颜色进行维护：</li>
 </ul>
-<p><img src="/images/1558610879706.png" alt=""></p>
+<p><img src="/markdown/images/1558610879706.png" alt=""></p>
 <p>颜色维护过程：</p>
 <pre><code>node.right = x.left;
 x.left = node;
@@ -5589,7 +5589,7 @@ node.color = RED;//旋转之后，node 和 x 组成 3-节点，所以 node 在�
 <ul>
 <li>情况1：在黑色节点的右侧插入节点，相当于在 2-3树中的 3-节点的右侧插入节点，会形成临时的 4-节点，之后需要节点进行拆分，拆分成两个独立的 2-节点，这相当于要把红黑树中两个红色节点改为黑色，最后，拆分形成的根节点需要继续向上与它的父亲节点融合，红黑树中只有红色节点才表示它要与它的父节点进行融合，这意味着新形成的根节点需要变为红色。这个过程看似三个节点的颜色都变了，称为<strong>颜色翻转</strong>。</li>
 </ul>
-<p><img src="/images/1558610880693.png" alt=""></p>
+<p><img src="/markdown/images/1558610880693.png" alt=""></p>
 <pre><code>node.color = RED;
 node.left.color = BLACK;
 node.right.color = BLACK;
@@ -5597,7 +5597,7 @@ node.right.color = BLACK;
 <ul>
 <li>情况2：在一个红色节点和黑色节点组成的 3-节点 的左侧插入元素，这就形成了黑节点的左孩子和其左孩子的左孩子都是红色的，可以看成是临时的4-节点，此时需要对其进行右旋转，之后在对其进行颜色翻转，以维持红黑树的性质，具体过程如下：</li>
 </ul>
-<p><img src="/images/1558610881090.png" alt=""></p>
+<p><img src="/markdown/images/1558610881090.png" alt=""></p>
 <pre><code>//旋转
 node.left = x.right;
 x.right = node;
@@ -5608,12 +5608,12 @@ node.color = RED;//本质上还是 12 42 37 三个节点组成的临时的 4-节
 <ul>
 <li>情况3：在一个红色节点和黑色节点组成的 3-节点 的中间插入元素，即在黑色节点的左侧孩子的右侧插入节点，这个过程的需要进行的变换过程是：先基于 37 几点进行左旋转：</li>
 </ul>
-<p><img src="/images/1558610881686.png" alt=""></p>
+<p><img src="/markdown/images/1558610881686.png" alt=""></p>
 <p>变成情况2，再按情况2 的方式处理。即再右旋转+颜色翻转，整个过程如下：</p>
-<p><img src="/images/1558610881904.png" alt=""></p>
+<p><img src="/markdown/images/1558610881904.png" alt=""></p>
 <h4 id="维护红黑树的时机"><a class="header-anchor" href="#维护红黑树的时机"></a>维护红黑树的时机</h4>
 <p>先把节点按照 BST 的逻辑添加到树种，再回溯向上维护，与 AVL 一致。插入节点后，红黑树的性质维护是一个叠加的过程，而且有些情况属于另一些情况的子过程，参考下面箭头方向：</p>
-<p><img src="/images/1558610882217.png" alt=""></p>
+<p><img src="/markdown/images/1558610882217.png" alt=""></p>
 <ul>
 <li>最复杂的是在红色节点的右侧插入红色节点，需要进行三次变换。</li>
 <li>第一个箭头表示，在红色节点的左侧插入就等价于第一种情况进行左旋转之后的情况。</li>
@@ -5709,8 +5709,8 @@ if(isRed(node.right) &amp;&amp; isRed(node.left)){
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5529,7 +5529,7 @@ var _hmt = _hmt || [];
 <li>对各来源返回的数据，根据发布时间排序，截取前 n 条</li>
 <li>对这 n 条数据，请求评论信息，封装返回</li>
 </ol>
-<p><img src="/images/1563958633904.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958633904.jpg" alt=""></p>
 <h2 id="2-2、关注页接口"><a class="header-anchor" href="#2-2、关注页接口"></a>2.2、关注页接口</h2>
 <h3 id="2-2-0-前置准备"><a class="header-anchor" href="#2-2-0-前置准备"></a>2.2.0 前置准备</h3>
 <h4 id="1）用户请求最新动态的时间"><a class="header-anchor" href="#1）用户请求最新动态的时间"></a>1）用户请求最新动态的时间</h4>
@@ -5563,7 +5563,7 @@ var _hmt = _hmt || [];
 </li>
 <li>若用户没有关注，请看下面“2.2.3 章节”</li>
 </ol>
-<p><img src="/images/1563958636389.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958636389.jpg" alt=""></p>
 <h3 id="2-2-2-已关注，查询所关注-media-的新动态数量"><a class="header-anchor" href="#2-2-2-已关注，查询所关注-media-的新动态数量"></a>2.2.2 已关注，查询所关注 media 的新动态数量</h3>
 <h4 id="0）外部支持-v3"><a class="header-anchor" href="#0）外部支持-v3"></a>0）外部支持</h4>
 <p>需要各来源提供接口：</p>
@@ -5586,7 +5586,7 @@ var _hmt = _hmt || [];
 </li>
 <li>若用户没有关注，返回 0</li>
 </ol>
-<p><img src="/images/1563958636644.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958636644.jpg" alt=""></p>
 <h3 id="2-2-3-未关注时，关注页展示数据"><a class="header-anchor" href="#2-2-3-未关注时，关注页展示数据"></a>2.2.3 未关注时，关注页展示数据</h3>
 <p>用户未登陆或未关注任何<code>media</code>时，展示推荐<code>media</code>的数据。后台维护一个推荐<code>media_id list</code>。</p>
 <h4 id="1）接口参数-v4"><a class="header-anchor" href="#1）接口参数-v4"></a>1）接口参数</h4>
@@ -5598,7 +5598,7 @@ var _hmt = _hmt || [];
 <li>对各来源返回的数据，根据发布时间排序，截取前 n 条</li>
 <li>对这 n 条数据，请求评论信息，封装返回</li>
 </ol>
-<p><img src="/images/1563958636963.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958636963.jpg" alt=""></p>
 <h1>三、方案二：拉模式进阶 - 集中模式</h1>
 <p>集中模式是指，将各来源的<code>动态 id</code>集中到一张<code>feed 表</code>。用户从<code>feed 表</code>批量获取<code>动态 id</code>，再根据<code>动态 id</code>去各来源请求<code>动态内容</code>。</p>
 <ul>
@@ -5680,7 +5680,7 @@ var _hmt = _hmt || [];
 <li>根据<code>source_id list</code>从各来源查询<code>来源内容</code>（来源处有缓存）</li>
 <li>对来源返回的<code>来源内容</code>，拼接分享信息，请求评论信息，封装返回</li>
 </ol>
-<p><img src="/images/1563958637239.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958637239.jpg" alt=""></p>
 <h2 id="3-2、关注页接口"><a class="header-anchor" href="#3-2、关注页接口"></a>3.2、关注页接口</h2>
 <h3 id="3-2-0-前置准备"><a class="header-anchor" href="#3-2-0-前置准备"></a>3.2.0 前置准备</h3>
 <h4 id="1）用户请求最新动态的时间-v2"><a class="header-anchor" href="#1）用户请求最新动态的时间-v2"></a>1）用户请求最新动态的时间</h4>
@@ -5707,7 +5707,7 @@ var _hmt = _hmt || [];
 </li>
 <li>若用户没有关注，请看下面“3.2.3 章节”</li>
 </ol>
-<p><img src="/images/1563958637509.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958637509.jpg" alt=""></p>
 <h3 id="3-2-2-已关注，查询所关注-media-的新动态数量"><a class="header-anchor" href="#3-2-2-已关注，查询所关注-media-的新动态数量"></a>3.2.2 已关注，查询所关注 media 的新动态数量</h3>
 <h4 id="1）接口参数-v7"><a class="header-anchor" href="#1）接口参数-v7"></a>1）接口参数</h4>
 <p><code>user_id</code></p>
@@ -5722,7 +5722,7 @@ var _hmt = _hmt || [];
 </li>
 <li>若用户没有关注，返回 0</li>
 </ol>
-<p><img src="/images/1563958637767.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958637767.jpg" alt=""></p>
 <h3 id="3-2-3-未关注时，关注页展示数据"><a class="header-anchor" href="#3-2-3-未关注时，关注页展示数据"></a>3.2.3 未关注时，关注页展示数据</h3>
 <p>用户未登陆或未关注任何<code>media</code>时，展示推荐<code>media</code>的数据。后台维护一个推荐<code>media_id list</code>。</p>
 <h4 id="1）接口参数-v8"><a class="header-anchor" href="#1）接口参数-v8"></a>1）接口参数</h4>
@@ -5734,7 +5734,7 @@ var _hmt = _hmt || [];
 <li>根据<code>source_id list</code>从各来源查询<code>来源内容</code>（来源处有缓存）</li>
 <li>对来源返回的<code>来源内容</code>，请求评论信息，封装返回</li>
 </ol>
-<p><img src="/images/1563958637893.jpg" alt=""></p>
+<p><img src="/markdown/images/1563958637893.jpg" alt=""></p>
 <h1>四、方案三：推拉结合</h1>
 <p>针对“关注页接口”。若“内容来源表”或“feed 表”数据量增大后，批量请求（<code>in $media_id_list</code>）性能代价过大；或者分库分表了，无法批量请求，单个请求再聚合的性能代价过大。这时可以使用推模式。</p>
 <p><strong>推模式</strong>：为每个用户建立一个“收件箱”——<code>follow_feed 表</code>，<code>media</code>发布动态后，将动态给每个粉丝的“收件箱”都推送一条。用户查询“关注页接口”时，只需查询自己的“收件箱”，空间换时间。“关注页接口”读多写少，推模式在“写”的时候扩散数据，使读写更加平衡。</p>
@@ -5978,8 +5978,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

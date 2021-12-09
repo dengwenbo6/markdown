@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5504,7 +5504,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1577291398480.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1577291398480.jpg" alt=""></p>
 <h5 id="2）确认丢失和确认迟到"><a class="header-anchor" href="#2）确认丢失和确认迟到"></a>2）确认丢失和确认迟到</h5>
 <ul>
 <li>确认丢失
@@ -5520,7 +5520,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1577291398659.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1577291398659.jpg" alt=""></p>
 <h4 id="1-2-连续-ARQ-协议（流水线）"><a class="header-anchor" href="#1-2-连续-ARQ-协议（流水线）"></a>1.2 连续 ARQ 协议（流水线）</h4>
 <p>为了提高传输效率，发送方可以不使用低效率的停止等待协议，而是采用流水线传输。流水线传输就是发送方可连续发送多个分组，不必每发完一个分组就停顿下来等待对方的确认。这样可使信道上一直有数据不间断地在传送。</p>
 <p>连续 ARQ 协议可提高信道利用率，采用流水线传输。</p>
@@ -5529,7 +5529,7 @@ var _hmt = _hmt || [];
 <li>接收方一般采用“累积确认”，对按序到达的最后一个分组发送确认，表明到这个分组为止的所有分组都已经正确收到了。</li>
 <li>发送方每收到一个确认，就把发送窗口向前滑动一个分组的位置。</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1577291398862.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1577291398862.jpg" alt=""></p>
 <ul>
 <li>优点：信道利用率高，容易实现，即使确认丢失，也不必重传。</li>
 <li>缺点：不能向发送方反映出接收方已经正确收到的所有分组的信息。
@@ -5550,7 +5550,7 @@ var _hmt = _hmt || [];
 <p>窗口是缓存的一部分，用来暂时存放字节流。发送方和接收方各有一个窗口，接收方通过 TCP 报文段中的窗口字段告诉发送方自己的窗口大小，发送方根据这个值和其它信息设置自己的窗口大小。</p>
 <p>发送窗口内的字节都允许被发送，接收窗口内的字节都允许被接收。如果发送窗口左部的字节已经发送并且收到了确认，那么就将发送窗口向右滑动一定距离，直到左部第一个字节不是已发送并且已确认的状态；接收窗口的滑动类似，接收窗口左部字节已经发送确认并交付主机，就向右滑动接收窗口。</p>
 <p>接收窗口只会对窗口内最后一个按序到达的字节进行确认，例如接收窗口已经收到的字节为 {31, 34, 35}，其中 {31} 按序到达，而 {34, 35} 就不是，因此只对字节 31 进行确认。发送方得到一个字节的确认之后，就知道这个字节之前的所有字节都已经被接收。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1577291399997.jpg" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1577291399997.jpg" alt=""></p>
 <h5 id="发送缓存和接收缓存"><a class="header-anchor" href="#发送缓存和接收缓存"></a>发送缓存和接收缓存</h5>
 <ul>
 <li>发送缓存用来暂时存放：
@@ -5566,7 +5566,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/wujun234/images@master/1581873536386.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/dengwenbo6/images@master/1581873536386.png" alt=""></p>
 <h4 id="2-2-超时重传时间的选择"><a class="header-anchor" href="#2-2-超时重传时间的选择"></a>2.2 超时重传时间的选择</h4>
 <p>TCP 采用了一种自适应算法，记录一个报文段发出的时间，以及收到相应的确认的时间。这两个时间之差就是报文段的往返时间 RTT。 TCP 保留了 RTT 的一个加权平均往返时间 RTTs。</p>
 <p>在计算加权平均 RTTs 时，只要报文段重传了，就不采用其往返时间样本。报文段每重传一次，就把超时重传时间 RTO 增大一些。</p>
@@ -5639,8 +5639,8 @@ var _hmt = _hmt || [];
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

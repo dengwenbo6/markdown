@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5501,7 +5501,7 @@ var _hmt = _hmt || [];
 <h3 id="1-1-总体介绍"><a class="header-anchor" href="#1-1-总体介绍"></a>1.1 总体介绍</h3>
 <p><code>TreeMap</code>实现了<code>SortedMap</code>接口，有序。非同步。</p>
 <p><strong>底层通过红黑树实现</strong>，也就意味着<code>containsKey()</code>, <code>get()</code>, <code>put()</code>, <code>remove()</code>都有着<code>log(n)</code>的时间复杂度。</p>
-<p><img src="/images/1545011837223.png" alt="TreeMap_base.png"></p>
+<p><img src="/markdown/images/1545011837223.png" alt="TreeMap_base.png"></p>
 <h3 id="1-2-红黑树"><a class="header-anchor" href="#1-2-红黑树"></a>1.2 红黑树</h3>
 <p><strong>红黑树是一种近似平衡的二叉查找树，它能够确保任何一个节点的左右子树的高度差不会超过二者中较低那个的一倍</strong>。满足如下条件：</p>
 <ol>
@@ -5531,7 +5531,7 @@ static final class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
 </ul>
 <h5 id="左旋"><a class="header-anchor" href="#左旋"></a>左旋</h5>
 <p>左旋的过程是将<code>x</code>的右子树绕<code>x</code>逆时针旋转，使得<code>x</code>的右子树成为<code>x</code>的父亲，同时修改相关节点的引用。旋转之后，二叉查找树的属性仍然满足。</p>
-<p><img src="/images/1545011837498.png" alt="TreeMap_rotateLeft.png"></p>
+<p><img src="/markdown/images/1545011837498.png" alt="TreeMap_rotateLeft.png"></p>
 <pre><code>private void rotateLeft(Entry&lt;K,V&gt; p) {
     if (p != null) {
         Entry&lt;K,V&gt; r = p.right;
@@ -5552,7 +5552,7 @@ static final class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
 </code></pre>
 <h5 id="右旋"><a class="header-anchor" href="#右旋"></a>右旋</h5>
 <p>右旋的过程是将<code>x</code>的左子树绕<code>x</code>顺时针旋转，使得<code>x</code>的左子树成为<code>x</code>的父亲，同时修改相关节点的引用。旋转之后，二叉查找树的属性仍然满足。</p>
-<p><img src="/images/1545011837851.png" alt="TreeMap_rotateRight.png"></p>
+<p><img src="/markdown/images/1545011837851.png" alt="TreeMap_rotateRight.png"></p>
 <pre><code>private void rotateRight(Entry&lt;K,V&gt; p) {
     if (p != null) {
         Entry&lt;K,V&gt; l = p.left;
@@ -5576,7 +5576,7 @@ static final class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
 <li>t 的右孩子为空，则 t 的后继是其第一个向左走的祖先。</li>
 </ol>
 <p>后继节点在红黑树的删除操作中将会用到。</p>
-<p><img src="/images/1545011838124.png" alt="TreeMap_successor.png"></p>
+<p><img src="/markdown/images/1545011838124.png" alt="TreeMap_successor.png"></p>
 <pre><code>static &lt;K,V&gt; TreeMap.Entry&lt;K,V&gt; successor(Entry&lt;K,V&gt; t) {
     if (t == null)
         return null;
@@ -5600,7 +5600,7 @@ static final class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
 <h4 id="1）get"><a class="header-anchor" href="#1）get"></a>1）get()</h4>
 <p><code>get(Object key)</code>调用了<code>getEntry(Object key)</code>得到相应的<code>entry</code>，然后返回<code>entry.value</code>。<br>
 <code>getEntry()</code>根据<code>key</code>的顺序对二叉查找树进行查找，直到找到满足<code>k.compareTo(p.key) == 0</code>的<code>entry</code>。</p>
-<p><img src="/images/1545011838400.png" alt="TreeMap_getEntry.png"></p>
+<p><img src="/markdown/images/1545011838400.png" alt="TreeMap_getEntry.png"></p>
 <pre><code>final Entry&lt;K,V&gt; getEntry(Object key) {
     ......
     if (key == null)//不允许key值为null
@@ -5677,7 +5677,7 @@ static final class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
 </code></pre>
 <h5 id="插入调整"><a class="header-anchor" href="#插入调整"></a>插入调整</h5>
 <p>调整函数<code>fixAfterInsertion()</code></p>
-<p><img src="/images/1545011838682.png" alt="TreeMap_put.png"></p>
+<p><img src="/markdown/images/1545011838682.png" alt="TreeMap_put.png"></p>
 <pre><code>private void fixAfterInsertion(Entry&lt;K,V&gt; x) {
     x.color = RED;
     while (x != null &amp;&amp; x != root &amp;&amp; x.parent.color == RED) {
@@ -5767,7 +5767,7 @@ static final class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
 <h5 id="删除调整"><a class="header-anchor" href="#删除调整"></a>删除调整</h5>
 <p>调整函数<code>fixAfterDeletion()</code></p>
 <p><strong>只有删除点是BLACK的时候，才会触发调整函数</strong>，因为删除 RED 节点不会破坏红黑树的任何约束，而删除 BLACK 节点会破坏规则 4。</p>
-<p><img src="/images/1545011839131.png" alt="TreeMap_fixAfterDeletion.png"></p>
+<p><img src="/markdown/images/1545011839131.png" alt="TreeMap_fixAfterDeletion.png"></p>
 <p>上述图解的总体思想是：将情况 1 首先转换成情况 2，或者转换成情况 3 和情况 4。</p>
 <pre><code>private void fixAfterDeletion(Entry&lt;K,V&gt; x) {
     while (x != root &amp;&amp; colorOf(x) == BLACK) {
@@ -5910,8 +5910,8 @@ static final class Entry&lt;K,V&gt; implements Map.Entry&lt;K,V&gt; {
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>

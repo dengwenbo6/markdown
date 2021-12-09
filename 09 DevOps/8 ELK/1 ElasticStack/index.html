@@ -16,9 +16,9 @@
 	
 	<!-- keywords,description -->
 	
-		<meta name="keywords" content="邓文博,wujun234,wujun,wu jun,java,技术,程序员,笔记,博客" />
+		<meta name="keywords" content="邓文博,dengwenbo6,dengwenbo,wu jun,java,技术,程序员,笔记,博客" />
 	 
-		<meta name="description" content="邓文博,wujun234,wujun,wu jun" />
+		<meta name="description" content="邓文博,dengwenbo6,dengwenbo,wu jun" />
 	
 
 	<!-- favicon -->
@@ -49,13 +49,13 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/markdown/js/main.js"></script>
 	
 		<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/valine@v1.4.14/dist/Valine.min.js"></script>
 	
 	
-		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+		<script async src="/markdown//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 	
 </head>
 
@@ -90,12 +90,12 @@ var _hmt = _hmt || [];
 	
 
 		<li class="menu-item">
-			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
 				UidGenerator
 			</a>
 		</li>
 		<li class="menu-item">
-			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+			<a href="https://github.com/dengwenbo6" class="menu-item-link" target="_blank">
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
@@ -5492,14 +5492,14 @@ var _hmt = _hmt || [];
 <li>Kibana ：可视化平台。能够搜索、展示存储在 Elasticsearch 中索引数据。</li>
 <li>Filebeat ：轻量级数据收集引擎。隶属于Beats，替代原先的 Logstash-fowarder 。</li>
 </ul>
-<p><img src="/images/1545712502366.png" alt=""></p>
+<p><img src="/markdown/images/1545712502366.png" alt=""></p>
 <h3 id="日志分析平台流程"><a class="header-anchor" href="#日志分析平台流程"></a>日志分析平台流程</h3>
 <ol>
 <li>把分散在各个机器的日志汇总到一个地方(Shipper, Broker, Indexer)</li>
 <li>把这些日志用某种方式保存并索引起来(Search &amp; Storage)</li>
 <li>需要的时候直接在汇总的日志中查询(Web Interface)</li>
 </ol>
-<p><img src="/images/1545712503433.gif" alt=""></p>
+<p><img src="/markdown/images/1545712503433.gif" alt=""></p>
 <h2 id="环境搭建"><a class="header-anchor" href="#环境搭建"></a>环境搭建</h2>
 <p>ELK依赖JDK</p>
 <p>ELK下载：<a href="https://www.elastic.co/downloads/" target="_blank" rel="noopener">https://www.elastic.co/downloads/</a></p>
@@ -5597,7 +5597,7 @@ sudo rpm -vi filebeat-5.1.1-x86_64.rpm
 <h2 id="工作原理"><a class="header-anchor" href="#工作原理"></a>工作原理</h2>
 <h3 id="Filebeat工作原理"><a class="header-anchor" href="#Filebeat工作原理"></a>Filebeat工作原理</h3>
 <p>Filebeat由两个主要组件组成：prospectors 和 harvesters。这两个组件协同工作将文件变动发送到指定的输出中。</p>
-<p><img src="/images/1545712503649.png" alt=""></p>
+<p><img src="/markdown/images/1545712503649.png" alt=""></p>
 <ul>
 <li>
 <p><strong>Harvester（收割机）</strong>  :负责读取单个文件内容。<br>
@@ -5615,7 +5615,7 @@ Prospector会找到/apps/logs/*目录下的所有info.log文件，并为每个�
 <p>Filebeat之所以能保证事件至少被传递到配置的输出一次，没有数据丢失，是因为filebeat将每个事件的传递状态保存在文件中。在未得到输出方确认时，filebeat会尝试一直发送，直到得到回应。若filebeat在传输过程中被关闭，则不会再关闭之前确认所有时事件。任何在filebeat关闭之前为确认的时间，都会在filebeat重启之后重新发送。这可确保至少发送一次，但有可能会重复。可通过设置shutdown_timeout 参数来设置关闭之前的等待事件回应的时间（默认禁用）。</p>
 <h3 id="Logstash工作原理"><a class="header-anchor" href="#Logstash工作原理"></a>Logstash工作原理</h3>
 <p>Logstash事件处理有三个阶段：inputs → filters → outputs。是一个接收，处理，转发日志的工具。</p>
-<p><img src="/images/1545712503755.png" alt=""></p>
+<p><img src="/markdown/images/1545712503755.png" alt=""></p>
 <p><strong>Input</strong>：输入数据到logstash。</p>
 <p>一些常用的输入为：</p>
 <ul>
@@ -5713,8 +5713,8 @@ grok在线调试：<a href="https://grokdebug.herokuapp.com/" target="_blank" re
 		</span>
 	
 	<br>
-	Theme <a href="/markdown//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
-	by <a href="/markdown//github.com/wujun234" target="_blank">WuJun</a>
+	Theme <a href="/markdown//github.com/dengwenbo6/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="/markdown//github.com/dengwenbo6" target="_blank">dengwenbo</a>
 	Powered by <a href="/markdown//hexo.io" target="_blank">Hexo</a>
 	</p>
 </div>
